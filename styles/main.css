@@ -1,6 +1,17 @@
 * {
-    font-family: monospace;
-	text-align: center;
+    font-family: "Literata", monospace;
+    text-align: center;
+}
+
+body {
+    color: #ffffff;
+    background: #222222;
+    margin: 16px;
+    font-weight: 500;
+}
+
+a {
+    color: #b0bec5;
 }
 
 img.avatar {
@@ -23,7 +34,7 @@ button {
     margin: 8px;
 }
 
-footer {    
-	font-size: small;
+footer {
+    font-size: small;
     margin: 8px;
 }
