@@ -4,26 +4,26 @@ const possibleAnswers = [
     "A resposta não está clara, tente novamente.",
     "A resposta para essa pergunta não é exatamente aquela que você deseja.",
     "A resposta para essa pergunta é exatamente aquela que você deseja.",
-    "Afirmativo!",
+    "Afirmativo.",
     "As perspectivas não são tão boas.",
-    "Certamente, sim!",
-    "Com certeza!",
+    "Certamente.",
+    "Com certeza.",
     "Concentre-se e pergunte novamente.",
-    "De certa maneira, sim!",
+    "De certa maneira, sim.",
     "De certo modo, sim.",
     "De jeito algum.",
     "De jeito nenhum.",
     "De maneira alguma.",
     "De modo algum.",
-    "Decididamente, sim!",
+    "Decididamente, sim.",
     "Definitivamente, não.",
     "Duvido muito.",
     "Há outras áreas da sua vida que merecem mais atenção, não?",
     "Minhas fontes dizem não.",
     "Muito provavelmente, não.",
-    "Muito provavelmente, sim!",
+    "Muito provavelmente, sim.",
     "Negativo.",
-    "No tempo certo, sim!",
+    "No tempo certo, sim.",
     "Não agora.",
     "Não como você deseja.",
     "Não como você espera.",
@@ -34,20 +34,20 @@ const possibleAnswers = [
     "Não.",
     "Não, e você sabe o motivo.",
     "Não, mas a que custo?",
-    "Pelos meus cálculos, sim!",
+    "Pelos meus cálculos, sim.",
     "Pelos meus cálculos, não.",
     "Pelo que vejo, sim.",
     "Pelo que vejo, não.",
     "Pergunte novamente mais tarde.",
     "Pode contar com isso.",
-    "Positivo!",
-    "Sem dúvida!",
+    "Positivo.",
+    "Sem dúvida.",
     "Sim, mas a que custo?",
-    "Sim, definitivamente!",
+    "Sim, definitivamente.",
     "Sim, e você sabe o motivo.",
     "Sim, existe uma boa chance.",
     "Sim, mas não do jeito como você imagina.",
-    "Sim!",
+    "Sim.",
     "Sinais apontam que sim.",
     "Tem certeza que era essa a verdadeira pergunta que você gostaria de ter feito?",
     "É melhor você não saber sobre isso agora.",
@@ -62,10 +62,9 @@ let typeWriterIndex = 0;
 let answer = '';
 
 function getAnswer() {
-    let answer = '';
-    let index = Math.floor(Math.random() * possibleAnswers.length) + 1;
+    let index = Math.floor(Math.random() * possibleAnswers.length);
     answer = possibleAnswers[index];
-    return answer;
+    console.log({[index]: answer});
 }
 
 function typeWrite() {
@@ -77,15 +76,14 @@ function typeWrite() {
 }
 
 function reset() {
+    getAnswer();
     answerElement.innerHTML = '';
     typeWriterIndex = 0;
-    answer = getAnswer();
 }
 
 function showAnswer() {
-    button.innerHTML = 'Ter resposta para outra pergunta';
     reset();
     typeWrite();
 }
 
-button.addEventListener('click', showAnswer)
+button.addEventListener('click', showAnswer);

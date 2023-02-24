@@ -31,9 +31,11 @@ hr {
 
 button {
     font-size: 1.17em;
-    font-weight: bolder;
-    padding: 8px;
+    padding: 16px;
     margin: 8px;
+    background-color: #f44336;
+    border: none;
+    color: #ffffff;
 }
 
 footer {
