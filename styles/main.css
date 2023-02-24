@@ -22,7 +22,7 @@ img.avatar {
 
 p.answer {
     font-size: 1.5em;
-    font-weight: bolder
+    font-weight: bolder;
 }
 
 hr {
@@ -30,6 +30,8 @@ hr {
 }
 
 button {
+    font-size: 1.17em;
+    font-weight: bolder;
     padding: 8px;
     margin: 8px;
 }

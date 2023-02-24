@@ -83,7 +83,7 @@ function reset() {
 }
 
 function showAnswer() {
-    button.innerHTML = 'Obter resposta para outra pergunta';
+    button.innerHTML = 'Ter resposta para outra pergunta';
     reset();
     typeWrite();
 }
