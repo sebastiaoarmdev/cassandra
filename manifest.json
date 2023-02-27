@@ -1,0 +1,21 @@
+{
+    "name": "Cassandra",
+    "short_name": "Cassandra",
+    "id": "cassandra/?source=pwa",
+    "start_url": "./?source=pwa",
+    "display": "standalone",
+    "background_color": "#222222",
+    "theme_color": "#2B3467",
+    "orientation": "portrait-primary",
+    "description": "Respostas para todas as suas perguntas!",
+    "dir": "rtl",
+    "lang": "pt-BR",
+    "scope": "./",
+    "icons": [
+        {
+            "src": "images/avatar.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
